@@ -1,0 +1,15 @@
+{
+  "name": "simpledb",
+  "version": "1.0.0",
+  "description": "Simplistic Node database Model",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.om/lpdev/simpledb-js.git"
+  },
+  "author": "Jeremie A. <lp1.eu>",
+  "license": "MIT"
+}
