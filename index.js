@@ -31,6 +31,19 @@ class DB {
             })
         })
     }
+    initSync(filename) {
+        try {
+            const data = fs.readFileSync(filename)
+            this.data = JSON.parse(data)
+            this.initialized = true
+            return this.data
+        } catch (error) {
+            fs.writeFileSync(filename, '{}')
+            this.data = {}
+            this.initialized = true;
+            return this.data
+        }
+    }
     init(filename) {
         return new Promise((resolve, reject) => {
             this.file = filename;
