@@ -12,10 +12,10 @@ Simplistic Node.js database model.
 
 const db = require('simpledb')
 
-db.initSync('database.json')
+db.initSync('database.json') // Initialiser la base de données
 
-db.set('test', 42)
+db.set('users', [{"username": "lp1", "language": "Python"}])
 
-db.get('test') // 42
+db.get('users') // [{"username": "lp1", "language": "Python"}]
 
-db.write() // Saves your changes
+db.write() // Write your changes to database.json
