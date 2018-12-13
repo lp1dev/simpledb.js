@@ -12,15 +12,7 @@ Simplistic Node.js database model.
 
 const db = require('simpledb')
 
-db
-    .init('database.json')
-    .then(() => {
-        console.log('Database initialized')
-    })
-    .catch(error => {
-        console.error(error)
-    })
-
+db.initSync('database.json')
 
 db.set('test', 42)
 
