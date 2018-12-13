@@ -4,7 +4,7 @@ Simplistic Node.js database model.
 
 ## Install
 
-> npm install --save https://github.com/lp1dev/SimpleDB-js.git
+> npm install --save https://github.com/lp1dev/simpledb.js.git
 
 ## Example
 
