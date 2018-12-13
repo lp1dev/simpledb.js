@@ -32,6 +32,7 @@ class DB {
         })
     }
     initSync(filename) {
+        this.file = filename
         try {
             const data = fs.readFileSync(filename)
             this.data = JSON.parse(data)
